@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video-background{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+        .eyes{
+           position: absolute;
+           top:50%;
+           transform: translateY(-50%);
+           width: 100%;
+           text-align: center;
+           
+
+        }
+        .eye{
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            display: inline-block;
+            margin: 29px;
+            border: 5px solid black;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .ball
+        {
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="header">
+    <video autoplay loop class="video-background" controls-inline>
+    <source src="WhatsApp Video 2023-05-30 at 10.49.36 PM.mp4" type="video/mp4">
+    </video>
+    <img src="bean.jpg"style="position:absolute; left:400px;top:160px;" height="400px">
+    <div class="eyes">  
+        <div class="eye">
+            <div class="ball"></div>
+        </div>
+        <div class="eye">
+            <div class="ball"></div>
+            </div></div>
+            </section>
+            <script src="bean.js"></script>
+</body>
+</html>
